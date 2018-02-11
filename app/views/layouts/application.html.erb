@@ -9,6 +9,78 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="header">
+      <a href='https://www.gaggleamp.com/'>
+        <img src="<%= asset_path 'GaggleAMP_hrz-rgb.jpg' %>"/>
+      </a>
+    </div>
+    <div class="banner">
+      <div class="form-section">
+        <h1>Engage Your Employees & Transform Your Social Media Results</h1>
+        <br />
+        <%= form_for :session do |f| %>
+          <%= f.email_field :email, class: 'form-control', placeholder: "ENTER WORK EMAIL", style: 'width: 95%' %>
+          <%= f.submit "START TRIAL" , class: 'btn-primary' %>
+        <% end %>
+        <%= yield %>
+      </div>
+      <div class="contact-us">
+        <h1>Have questions? We're always here to help</h1>
+        <div class="row">
+          <div class="column">
+            <%= inline_svg "envelope.svg" %>
+            <p>SEND A MESSAGE</p>
+            <p>Sales: sales@gaggleamp.com</p>
+            <p>All Other: info@gaggleamp.com</p>
+          </div>
+          <div class="column">
+            <%= inline_svg "speech bubble.svg" %>
+            <p>CHAT WITH US NOW</p>
+            <p>Start a live chat</p>
+          </div>
+          <div class="column">
+            <!-- <img src="<%= asset_path 'phone.svg' %>" /> -->
+            <%= inline_svg "phone.svg" %>
+            <p>GIVE US A CALL</p>
+            <p>USA Toll Free: (888) 677-4528</p>
+            <p>International: 001 (617) 564-4008</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class = "row">
+          <div class= "logo-column">
+            <img src="<%= asset_path 'GaggleAMP_hrz-rgb.jpg' %>"/>
+          </div>
+          <div class= "column">
+            <h1>PRODUCT</h1>
+            <p>Features</p>
+            <p>Promo</p>
+            <p>Download</p>
+          </div>
+          <div class = "column">
+            <h1>CONTACT</h1>
+            <p>Find Us</p>
+            <p>FAQ</p>
+            <p>Help</p>
+          </div>
+          <div class="column">
+            <h1>SERVICES</h1>
+            <p>Support</p>
+            <p>Templates</p>
+            <p>Tutorials</p>
+          </div>
+          <div class="column">
+            <h1>FOLLOW US</h1>
+            <p>
+              <%= inline_svg "facebook-f.svg" %>&nbsp;&nbsp;
+              <%= inline_svg "linkedin.svg" %>&nbsp;&nbsp;
+              <%= inline_svg "twitter-circle.svg" %>
+
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

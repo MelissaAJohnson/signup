@@ -16,8 +16,10 @@ gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
 gem 'jquery-turbolinks'
 gem 'jbuilder', '~> 2.5'
+gem 'inline_svg'
 
 group :development, :test do
+  gem 'rspec-rails'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
