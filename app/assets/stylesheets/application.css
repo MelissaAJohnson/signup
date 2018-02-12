@@ -19,6 +19,11 @@ h1 {
   color: #3a4da0;
 }
 
+a {
+  color: #3a4da0;
+  text-decoration: none;
+}
+
 .header {
   left: 0px;
   top: 0px;
@@ -41,7 +46,7 @@ h1 {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 800px !important;
+  min-height: 850px !important;
 }
 
 .form-section {
@@ -49,18 +54,24 @@ h1 {
   left: 100px;
   top: 175px;
   background-color: rgba(255,255,255,1);
-  color: #3a4da0 !important;
+  /* color: #3a4da0 !important; */
   box-shadow: -10px 10px 20px rgba(0,0,0,0.15);
-  width: 40%;
+  width: 525px;
   text-align: left;
   padding: .5% 2% 0% 2%;
+}
 
+.form-section p {
+  font-size: 24px;
+  font-family: "Open Sans";
+  color: rgba(70, 70, 70, .5);
 }
 
 .form-control {
   background-color: rgb(223, 229, 236);
-  opacity: 0.502;
+  opacity: 0.50;
   height: 48px;
+  margin-top: 10px;
 }
 
 .form-control:focus {
@@ -93,7 +104,6 @@ input {
 
 .contact-us {
   position: absolute;
-  margin-top: 800px;
   background-color: rgb(58,77,160);
   width: 100%;
   height: 438px;
@@ -133,7 +143,7 @@ input {
 
 .footer {
   position: absolute;
-  margin-top: 1238px;
+  margin-top: 425px;
   background-color: white;
   width: 100%;
   height: 232px;
@@ -174,4 +184,10 @@ input {
   color: rgb(204, 204, 204);
   font-size: 18px;
   font-family: "Open Sans";
+}
+
+.largerLabel {
+  font-size: 18px;
+  font-family: 'Open Sans';
+  color: rgba(70, 70, 70, .5)
 }

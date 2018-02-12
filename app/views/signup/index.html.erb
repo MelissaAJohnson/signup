@@ -1,3 +1,9 @@
-<div class="form-box">
-  &nbsp;
+<div class="form-section">
+  <h1>Engage Employees & Transform Your Social Media Results</h1>
+  <br />
+  <%= form_for :session do |f| %>
+    <%= f.email_field :email, class: 'form-control', placeholder: "ENTER WORK EMAIL", style: 'width: 95%' %>
+    <%= f.submit "START TRIAL" , class: 'btn-primary' %>
+  <% end %>
+  <br />
 </div>

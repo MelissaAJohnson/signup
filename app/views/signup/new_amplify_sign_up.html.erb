@@ -1,0 +1,21 @@
+<div class="form-section">
+  <h1>Engage Employees & Transform Your Social Media Results</h1>
+  <%= form_for :session do |f| %>
+    <%= f.text_field :fname, class: 'form-control', placeholder: "FIRST NAME", style: 'width: 45%' %>&nbsp;&nbsp;
+    <%= f.text_field :lname, class: 'form-control', placeholder: "LAST NAME", style: 'width: 45%' %>
+    <%= f.text_field :company, class: 'form-control', placeholder: "COMPANY", style: 'width: 95%' %>
+    <%= f.text_field :title, class: 'form-control', placeholder: "TITLE", style: 'width: 95%' %>
+    <%= f.text_field :telephone, class: 'form-control', placeholder: "PHONE NUMBER", style: 'width: 95%' %>
+    <br /><br /><br />
+    <%= f.password_field :password, class: 'form-control', placeholder: "PASSWORD", style: 'width: 45%' %>&nbsp;&nbsp;
+    <%= f.password_field :password_confirmation, class: 'form-control', placeholder: "CONFIRM PASSWORD", style: 'width: 45%' %>
+    <br />
+    <%= f.text_field :hear, class: 'form-control', placeholder: "HOW DID YOU HEAR ABOUT US", style: 'width: 95%' %>
+    <br /><br />
+    <%= f.check_box :agree %>
+    <%= label_tag(:agree, "I agree to the terms of service", class: "largerLabel") %>
+    <br />
+    <%= f.submit "START TRIAL" , class: 'btn-primary' %>
+  <% end %>
+  <br />
+</div>
